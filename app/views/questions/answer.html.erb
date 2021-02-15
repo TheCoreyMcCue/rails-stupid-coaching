@@ -1,0 +1,6 @@
+
+<!-- <p><%= params["question"] %></p> -->
+
+<% if '?'.in? params['question'] %>
+<p><%= params['question'] %></p>
+<% end %>

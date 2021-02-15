@@ -1,17 +1,17 @@
 <h1>Stupid Coach</h1>
 
+
 <div class="container">
-  <div class="row">
-    <div class=" col-6 offset-3">
-      <form action="/answer" method="get">
-        <div class="mb-3">
-          <label for="questionForm" class="form-label">Ask a Question: </label>
-          <input type="text" name="question" placeholder="What can I help you with?" class="form-control" id="questionForm">
-          <button type="submit" class="btn btn-primary mt-3">Submit</button>
-        </div>
-      </form>
-    </div>
+  <div class="col-6 offset-3 row border rounded-2 px-2">
+    <form action="/answer" method="get">
+      <div class="mb-3">
+        <label for="questionForm" class="form-label">Ask a Question: </label>
+        <input type="text" name="question" required="required" placeholder="What can I help you with?" class="form-control" id="questionForm">
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </div>
+    </form>
   </div>
 </div>
+
 
 

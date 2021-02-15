@@ -1,9 +1,17 @@
 <h1>Stupid Coach</h1>
 
-<form action="/answer" method="get">
-  <!-- name = "key_name" of your params hash-->
-  <input type="text" name="question" placeholder="What can I help you with?">
-  <input type="submit" value="Ask!">
-</form>
+<div class="container">
+  <div class="row">
+    <div class=" col-6 offset-3">
+      <form action="/answer" method="get">
+        <div class="mb-3">
+          <label for="questionForm" class="form-label">Ask a Question: </label>
+          <input type="text" name="question" placeholder="What can I help you with?" class="form-control" id="questionForm">
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-<%= params["question"] %>
+

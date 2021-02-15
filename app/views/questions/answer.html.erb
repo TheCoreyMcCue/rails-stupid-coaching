@@ -1,10 +1,15 @@
-
-<!-- <p><%= params["question"] %></p> -->
+<h3 id="question">Your Question: <%= params["question"] %></h3>
 
 <% if '?'.in? params['question'] %>
-    <p><%= 'Silly question, get dressed and go to work!' %></p>
-  <% elsif params['question'] == 'I am going to work' %>
-    <p><%= 'Great!' %></p>
-  <% else %>
-  <p><%= "I don't care, get dressed and go to work!" %></p>
+    <h3 id="silly"><%= 'Silly question, get dressed and go to work!' %></h3>
+    <p> -Your Coach</p>
+<% elsif params['question'] == 'I am going to work' %>
+    <h3 id="great"><%= 'Great!' %></h3>
+    <p> -Your Coach</p>
+<% else %>
+    <h3 id="idc"><%= "I don't care, get dressed and go to work!" %></h3>
+    <p> -Your Coach</p>
 <% end %>
+
+
+<pre></pre>
